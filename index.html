@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia Quiz</title>
+    <title>Quiz</title>
    <link rel="stylesheet" href="/stle.css">
 </head>
 <body>
+ 
+
   <section>
+    <p class="score" id="scoreContainer">0</p>
     <div id="para"></div>
     <div id="answers"></div>
     <div class="result" id="result"></div>
@@ -15,8 +18,16 @@
     <button id="prevBtn" disabled>Previous</button>
     <button id="nextBtn">Next</button>
     </div>
+
+    <div class="preview-score" id="preview">
+     <div>
+      <span id="preview-score">Your Score is</span><br>
+      <button class="final-score" id="finalScore">20</button>
+     </div>
+    </div>
   </section>
 
+ 
     <script src="/script.js"></script>
 </body>
 </html>

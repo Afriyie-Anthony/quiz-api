@@ -11,9 +11,9 @@ body{
 }
 
 section{
-  background-color: rgb(0,0,0,0.4);
+  background-color: rgb(0,0,0,0.6);
   width: 35%;
-  height: 50vh;
+  height: 57vh;
   padding: 2rem;
   border-radius: 20px;
 }
@@ -26,18 +26,18 @@ section{
       border-radius: 10px;
       font-size: 18px;
   }
-  .answer:hover {
+  /* .answer:hover {
       background-color: #f0f0f0;
       color: #000;
     
-  }
+  } */
   .correct {
       background-color: #d4edda;
       color: #000;
   }
-  .incorrect {
+  /* .incorrect {
       background-color: #f9939c;
-  }
+  } */
   .result {
       margin-top: 10px;
       font-weight: bold;
@@ -71,4 +71,46 @@ section{
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
+  }
+
+  .score{
+    width: 60px;
+    /* background-color: rgb(0,0,0,0.6); */
+    float: right;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: -1.6rem;
+    border-radius: 5px;
+  }
+  .preview-score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    display: none;
+
+    div{
+      text-align: center;
+      span{
+        font-size: 40px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1rem 0  1rem 2.5rem;
+      }
+
+      button{
+        padding: 2rem 4rem;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+        font-weight: 700;
+        font-size: 60px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(0,0,0,0.1);
+        color: #fff;
+      }
+    }
   }
